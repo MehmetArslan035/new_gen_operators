@@ -113,8 +113,8 @@ const user = {
 
 }
 
-const {name1, address:{city, zip, street}} = user
-console.log(name1,city,zip, street);
+const {name, address:{city, zip, street}} = user
+console.log(name,city,zip, street);
 
 const company = {
   name: 'Tech Corp',
@@ -134,8 +134,51 @@ const company = {
 
 company.location.address.city = "Texas"
 
-const { name,location: {address:{city:companycity}}} = company
+// const { name,location: {address:{city:companycity}}} = company
 
-console.log(name, country, city);
+// console.log(name, country, city);
 
+//^ Array desturcturing
+
+const num = [1,2,3,4,5]
+
+console.log(num [2]);
+
+let [first,third,second,] = num 
+
+console.log(first);
+console.log(second);
+console.log(third);
+
+
+const num2 = [1,2,3,4,5]
+
+console.log(num [2]);
+
+let [birinci,,, fourth, fifth] = num2
+
+console.log(first);
+console.log(fourth);
+console.log(fifth);
+
+
+const nestedArray = [1,2,[3,4],5]
+
+let[,,nested, besinci]=nestedArray
+
+console.log(nested); 
+console.log(besinci);
+
+let[bir,iki,[uc,dort],bes] = nestedArray
+
+console.log(bir,iki,uc,dort,bes);
+
+// Rest (...) operatörü
+
+const araclar = ["Kamyon", "Tır", "Kamyonet", "Araba", "ATV", "Minibüs"]
+const [arac1,arac2,,...binek]= araclar
+
+console.log(arac1);
+console.log(arac2);
+console.log(binek);
 
