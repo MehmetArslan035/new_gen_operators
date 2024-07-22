@@ -70,3 +70,16 @@ const printPerson = (insan) => {
 }
 printPerson(person3)
 printPerson(person2)
+
+const printPerson2 = (person) => {
+  const {personName, surname} = person
+  console.log(`Name: ${personName} Surname: ${surname}`);
+}
+printPerson2(person2)
+printPerson2(person3)
+
+const printPerson3 = ({personName, surname}) => {
+  console.log(`Name: ${personName} Surname: ${surname}`);
+}
+printPerson3(person3)
+printPerson3(person2)
