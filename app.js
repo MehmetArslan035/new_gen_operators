@@ -6,3 +6,12 @@ const product = {
 }
 
 console.log(product.id);
+
+
+// [] square bracket notasyonu
+
+console.log(product["brand"]);
+
+let ids = product.id 
+
+ids= "67890"
