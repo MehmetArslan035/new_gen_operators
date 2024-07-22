@@ -83,3 +83,21 @@ const printPerson3 = ({personName, surname}) => {
 }
 printPerson3(person3)
 printPerson3(person2)
+
+
+
+{
+  const objectReturn = function(){
+    return{
+      name: "Mike",
+      surname: "Zanetti",
+      location: "Italy"
+
+    }
+  }
+  console.log(objectReturn());
+  let {surname, name} = objectReturn()
+
+  console.log(name, surname);
+}
+
