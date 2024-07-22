@@ -31,3 +31,9 @@ const product2 = {
 const {id, price} = product2
 
 console.log(id,price);
+
+{
+
+  const {id, brand}= product
+  console.log(id,brand);
+}
