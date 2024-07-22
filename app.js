@@ -210,3 +210,26 @@ const toplam = (...sayilar)=> {
 
 console.log(toplam(1,2,3,4,5,6,12));
 console.log(toplam(50));
+
+// Spread (...) operatörü
+const person6 = {
+  ad: "Hazel",
+  soyad: "Nut",
+  is: "team lead",
+  yas: 40,
+}
+
+const person7 = person6
+
+person6.yas = 41
+
+console.log(person6.yas);
+console.log(person7.yas);
+
+const person8 = {...person6}
+
+console.log(person8);
+
+person6.yas += 1
+console.log(person6.yas);
+console.log(person8.yas);
