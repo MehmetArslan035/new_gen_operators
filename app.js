@@ -47,3 +47,14 @@ const person = {
 let { personName, surname, age = 66} = person
 
 console.log(personName, surname, age);
+
+
+const person2 = {
+  personName: "John",
+  surname: "Doe"
+
+}
+
+let { personName: userName, surname: userSurname, Userage = 66} = person2
+
+console.log(userName, userSurname, Userage);
