@@ -101,3 +101,17 @@ printPerson3(person2)
   console.log(name, surname);
 }
 
+const user = {
+    name: "Mike",
+    surname: "Zanetti",
+    location: "Italy",
+    address:{
+      street: "332 main St",
+      city : "Milano",
+      zip: "12345",
+    }
+
+}
+
+const {name, address:{city, zip, street}} = user
+console.log(name,city,zip, street);
