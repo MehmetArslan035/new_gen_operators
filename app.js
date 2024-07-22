@@ -28,12 +28,12 @@ const product2 = {
 
 //^ object desturcturing
 
-const {id, price} = product2
+const {brand,price,type,id} = product2
 
-console.log(id,price);
+console.log(brand,price,type,id);
 
-{
+// {
 
-  const {id, brand}= product
-  console.log(id,brand);
-}
+//   const {id, brand}= product
+//   console.log(brand, price, type, id);
+// }
