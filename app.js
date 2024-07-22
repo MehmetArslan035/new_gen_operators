@@ -37,3 +37,13 @@ console.log(brand,price,type,id);
 //   const {id, brand}= product
 //   console.log(brand, price, type, id);
 // }
+
+const person = {
+  personName: "Jean-Jacques",
+  surname: "Rousseau"
+
+}
+
+let { personName, surname, age = 66} = person
+
+console.log(personName, surname, age);
