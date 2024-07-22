@@ -115,3 +115,24 @@ const user = {
 
 const {name, address:{city, zip, street}} = user
 console.log(name,city,zip, street);
+
+const company = {
+  name: 'Tech Corp',
+  location: {
+      country: 'USA',
+      address: {
+          street: '456 Tech Road',
+          city: 'Innovation',
+          zip: '67890'
+      }
+  },
+  employees: [
+      { name: 'John', position: 'Developer' },
+      { name: 'Jane', position: 'Designer' }
+  ]
+};
+
+
+const { location: {address:{city:companycity}}} = company
+
+console.log(companycity);
