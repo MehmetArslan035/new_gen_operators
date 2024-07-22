@@ -175,6 +175,7 @@ console.log(bir,iki,uc,dort,bes);
 
 // Rest (...) operatörü
 
+// Arraylerde kullanımı
 const araclar = ["Kamyon", "Tır", "Kamyonet", "Araba", "ATV", "Minibüs"]
 const [arac1,arac2,,...binek]= araclar
 
@@ -182,3 +183,30 @@ console.log(arac1);
 console.log(arac2);
 console.log(binek);
 
+
+// Objelerde kullanımı
+
+const person5 = {
+  ad: "Hazel",
+  soyad: "Nut",
+  is: "team lead",
+  yas: 40,
+}
+
+const{soyad, yas, ...geriKalanlar} = person5
+
+console.log(soyad,yas,geriKalanlar);
+
+
+// fonksiyonlarda rest operatörü kullanımı
+
+const topla = (a,b)=> a+b
+console.log(topla(1,2,3,4,5,6));
+
+const toplam = (...sayilar)=> {
+  // console.log(sayilar);
+  return sayilar.reduce((a,b)=>a+b)
+}
+
+console.log(toplam(1,2,3,4,5,6,12));
+console.log(toplam(50));
