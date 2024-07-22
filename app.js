@@ -58,3 +58,15 @@ const person2 = {
 let { personName: userName, surname: userSurname, Userage = 66} = person2
 
 console.log(userName, userSurname, Userage);
+
+const person3 = {
+  personName: "Jane",
+  surname: "Doe"
+
+}
+
+const printPerson = (insan) => {
+  console.log(`Name: ${insan.personName} Surname: ${insan.surname}`);
+}
+printPerson(person3)
+printPerson(person2)
