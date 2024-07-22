@@ -113,8 +113,8 @@ const user = {
 
 }
 
-const {name, address:{city, zip, street}} = user
-console.log(name,city,zip, street);
+const {name1, address:{city, zip, street}} = user
+console.log(name1,city,zip, street);
 
 const company = {
   name: 'Tech Corp',
@@ -132,7 +132,10 @@ const company = {
   ]
 };
 
+company.location.address.city = "Texas"
 
-const { location: {address:{city:companycity}}} = company
+const { name,location: {address:{city:companycity}}} = company
 
-console.log(companycity);
+console.log(name, country, city);
+
+
